@@ -70,7 +70,7 @@ int main() {
     cout << "Oyuncu Skor: " << oyuncuSkor << endl;
     cout << "Bilgisayar Skor: " << bilgisayarSkor << endl;
     if (oyuncuSkor > bilgisayarSkor) {
-        cout << "TEBRİKLER KAZANDINIZ!!";
+        cout << "TEBRIKLER KAZANDINIZ!!";
     }
     else if (oyuncuSkor < bilgisayarSkor) {
         cout << "KAYBETTINIZ!!";
