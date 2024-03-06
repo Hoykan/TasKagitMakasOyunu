@@ -1,3 +1,3 @@
 ﻿  taskagitmakas.cpp
-C:\Users\hoyka\source\repos\taskagitmakas\taskagitmakas.cpp(14,15): warning C4244: 'bağımsız değişken': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
+C:\Users\hoyka\source\repos\taskagitmakas\taskagitmakas.cpp(11,15): warning C4244: 'bağımsız değişken': 'time_t' - 'unsigned int' dönüşümü; veri kaybı olabilir
   taskagitmakas.vcxproj -> C:\Users\hoyka\source\repos\taskagitmakas\x64\Debug\taskagitmakas.exe

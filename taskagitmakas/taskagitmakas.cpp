@@ -7,52 +7,49 @@
 using namespace std;
 
 int main() {
-  
-    
-    setlocale(LC_ALL, "Turkish");
     int oyuncuSkor = 0, bilgisayarSkor = 0, secim, x;
     srand(time(NULL));
 
-    cout << "----------- TAÞ KAÐIT MAKAS OYUNUNA HOÞGELDÝNÝZ -----------" << endl;
-    cout << "-----------   Taþ = 1 , Kaðýt = 2 , Makas = 3   ----------- " << endl;
-    cout << "-----------   Seçiminiz 1, 2, 3 olmalýdýr!   ----------- " << endl;
+    cout << "----------- TAS KAGIT MAKAS OYUNUNA HOSGELDINIZ -----------" << endl;
+    cout << "-----------   Tas = 1 , Kagit = 2 , Makas = 3   ----------- " << endl;
+    cout << "-----------   Seciminiz 1, 2, 3 olmalidir!   ----------- " << endl;
     while (true) {
-        cout << "Kaç tur oynamak istiyorsanýz lütfen giriniz: ";
+        cout << "Kac tur oynamak istiyorsaniz lutfen giriniz: ";
         cin >> x;
         if (x > 0)
             break;
         else
-            cout << "Hatalý giriþ yaptýnýz. Lütfen sýfýrdan büyük bir sayý girin." << endl;
+            cout << "Hatali giris yaptiniz. Lutfen sifirdan buyuk bir sayi girin." << endl;
     }
-    for (int i = 0; i <x; i++) {
+    for (int i = 0; i < x; i++) {
         int bilgisayar = rand() % 3 + 1;
         cout << "-----------  -----------    " << endl;
-        cout << "Seçiminizi girin: ";
+        cout << "Seciminizi girin: ";
         cin >> secim;
         cout << "-----------  -----------  " << endl;
 
         if (secim == 1) {
-            cout << "Seçiminiz: Taþ" << endl;
+            cout << "Seciminiz: Tas" << endl;
         }
         else if (secim == 2) {
-            cout << "Seçiminiz: Kaðýt" << endl;
+            cout << "Seciminiz: Kagit" << endl;
         }
         else if (secim == 3) {
-            cout << "Seçiminiz: Makas" << endl;
+            cout << "Seciminiz: Makas" << endl;
         }
         if (bilgisayar == 1) {
-            cout << "Bilgisayarýn seçimi: Taþ " << endl;
+            cout << "Bilgisayarin secimi: Tas " << endl;
         }
         if (bilgisayar == 2) {
-            cout << "Bilgisayarýn seçimi: Kaðýt " << endl;
+            cout << "Bilgisayarin secimi: Kagit " << endl;
         }
         if (bilgisayar == 3) {
-            cout << "Bilgisayarýn seçimi: Makas " << endl;
+            cout << "Bilgisayarin secimi: Makas " << endl;
         }
 
 
         if (secim < 1 || secim > 3) {
-            cout << "Hatalý giriþ yaptýnýz" << endl;
+            cout << "Hatali giris yaptiniz" << endl;
             continue;
         }
 
@@ -60,11 +57,11 @@ int main() {
             cout << "Berabere bitti" << endl;
         }
         else if ((secim == 1 && bilgisayar == 3) || (secim == 2 && bilgisayar == 1) || (secim == 3 && bilgisayar == 2)) {
-            cout << "Oyuncu kazandý" << endl;
+            cout << "Oyuncu kazandi" << endl;
             oyuncuSkor++;
         }
         else {
-            cout << "Bilgisayar kazandý" << endl;
+            cout << "Bilgisayar kazandi" << endl;
             bilgisayarSkor++;
         }
     }
@@ -76,7 +73,7 @@ int main() {
         cout << "TEBRÝKLER KAZANDINIZ!!";
     }
     else if (oyuncuSkor < bilgisayarSkor) {
-        cout << "KAYBETTÝNÝZ!!";
+        cout << "KAYBETTINIZ!!";
     }
     else if (oyuncuSkor == bilgisayarSkor) {
         cout << "BERABERE KALDINIZ!!";
